@@ -115,14 +115,15 @@
 import React from 'react'
 import bgimg from '../public/images/header.jpg'
 import bgimg4 from '../public/images/imgs1.jpg'
+import bgimg7 from '../public/images/imgs27.jpeg'
 import bgimg2 from '../public/images/image92.png'
 import bgimg3 from '../public/images/imgs11.png'
 import bgimg5 from '../public/images/snake.svg'
-import { SlMagnifier } from 'react-icons/sl'
+import { SlEnvolope, SlMagnifier } from 'react-icons/sl'
 import { FaPlay } from 'react-icons/fa'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ProductList1, ProductList2, ProductList3, ProductList4, ProductList5, Secondection, TopLists } from '@/components/general/Extras'
+import { CountryLists, ProductList1, ProductList2, ProductList3, ProductList4, ProductList5, Secondection, TopLists } from '@/components/general/Extras'
 
 const page = () => {
   return (
@@ -178,7 +179,7 @@ const page = () => {
           </div>
         </div>
         {/* third section */}
-        <div className="bg-[#f4f4f4]">
+        <div className="">
           <div className="w-10/12 mx-auto p-8">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="h-full flex flex-col justify-center lg:w-10/12 gap-8">
@@ -207,7 +208,7 @@ const page = () => {
           </div>
         </div>
         {/* fourth section */}
-        <div className="py-8">
+        <div className="py-8 bg-white">
           <div className="w-10/12 mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-5 mb-10">
               <div className="col-span-1">
@@ -277,7 +278,7 @@ const page = () => {
           </div>
         </div>
         {/* fifth section */}
-        <div className="bg-[#f4f4f4] py-6">
+        <div className=" py-6">
           <div className="w-10/12 mx-auto">
             <div className="font-semibold text-[2rem]">Recommended items</div>
             <div className="grid grid-cols-2 lg:grid-cols-5 gap-5">
@@ -301,7 +302,7 @@ const page = () => {
         </div>
 
         {/* sixth section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 bg-[#f4f4f4] py-14">
+        <div className="grid grid-cols-1 lg:grid-cols-2  py-14">
           <div className=" w-10/12 ml-auto flex flex-col justify-center gap-7">
             <h2 className="text-5xl font-semibold w-4/6">What Else We Offer</h2>
             <p className='lg:w-4/6 text-sm'>Join Shipam for streamlined, transparent and thriving commerce - redefining how business is conducted.</p>
@@ -341,14 +342,34 @@ const page = () => {
         {/* seventh section */}
         <div className="w-10/12 mx-auto my-20">
           <div className="text-5xl text-center font-semibold">How to Use Shipam</div>
-          <div className=""
+          <div className="bg-contain bg-no-repeat bg-center"
             style={{ backgroundImage: `url(${bgimg5.src})` }}
           >
-            {ProductList5.map((item, i) => (
-              <div key={i} className="grid grid-cols-1 lg:grid-cols-2">
-                <div className=""></div>
-                <div className="">
-                  <div className="relative w-[25rem] ml-auto h-[15rem]">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+              <div className=""></div>
+              <div className="">
+                <div className={`relative w-[33rem] h-[20rem]`}>
+                  <Image
+                    src={bgimg}
+                    alt="Shipam"
+                    fill
+                    objectFit='cover'
+                    className='rounded-3xl brightness-90'
+                  />
+                  <div className="absolute top-0 left-0 w-full h-full rounded-3xl bg-red-400 border-[12px]"></div>
+                  {/* <div className="w-full h-full bg-white/20 absolute top-0 left-0 rounded-3xl"></div>
+                    <div className="w-11/12 mx-auto right-0 h-5/6 my-auto bottom-0 bg-black/30 absolute top-0 left-0 rounded-3xl"></div> */}
+                </div>
+              </div>
+            </div>
+            {/* {ProductList5.map((item, i) => (
+              <div key={i} className="grid grid-cols-1 lg:grid-cols-2 mt-10 pb-14 pt-5">
+                <div className={`${(i + 1) % 2 === 0 ? 'order-2' : 'order-1'} flex flex-col justify-center w-4/5 mx-auto`}>
+                  <div className="text-red-700 font-semibold text-3xl">{item.title}</div>
+                  <div className="text-base">{item.text}</div>
+                </div>
+                <div className={`${(i + 1) % 2 !== 0 ? 'order-2' : 'order-1'} py-10`}>
+                  <div className={`relative w-[33rem] ${(i + 1) % 2 !== 0 ? 'ml-auto' : 'mr-auto'} h-[20rem]`}>
                     <Image
                       src={item.img}
                       alt="Shipam"
@@ -356,12 +377,60 @@ const page = () => {
                       objectFit='cover'
                       className='rounded-3xl brightness-90'
                     />
-                    <div className="w-full h-full bg-yellow-500/20 absolute top-0 left-0 rounded-3xl"></div>
-                    <div className="w-10/12 mx-auto right-0 h-full bg-red-600/20 absolute top-0 left-0 rounded-3xl"></div>
+                    <div className="w-full h-full bg-white/20 absolute top-0 left-0 rounded-3xl"></div>
+                    <div className="w-11/12 mx-auto right-0 h-5/6 my-auto bottom-0 bg-black/30 absolute top-0 left-0 rounded-3xl"></div>
                   </div>
                 </div>
               </div>
-            ))}
+            ))} */}
+          </div>
+        </div>
+        {/* eight section */}
+        <div className="w-10/12 mx-auto h-[40rem] mb-20 bg-cover bg-center rounded-[2rem]"
+          style={{ backgroundImage: `url(${bgimg7.src})` }}
+        >
+          <div className="w-full h-full bg-black/40 rounded-[2rem] flex items-center flex-col justify-end pb-14">
+            <div className="font-semibold text-white text-[3rem]">Join Shipam's vibrant community today</div>
+            <div className="text-white text-center w-2/4 mb-10 text-lg">We're more than an e-commerce platform; we're a robust ecosystem that empowers businesses, fuels entrepreneurship, and caters to all your consumer needs.</div>
+            <Link href="/" className='py-3 w-[18rem] bg-white/20 rounded-full text-white text-center border border-white'>Start with Shipam</Link>
+          </div>
+        </div>
+        {/* ninth section */}
+        <div className="bg-[#343434] pb-14">
+          <div className="w-10/12 mx-auto">
+            <div className="text-slate-100 text-3xl font-semibold pt-8 mb-10">Find suppliers by country or region</div>
+            <div className="grid grid-cols-4 lg:grid-cols-8 w-10/12 mx-auto">
+              {CountryLists.map((item, i) => (
+                <div className="flex items-center flex-col" key={i}>
+                  <div className="relative rounded-full p-3 w-fit h-10 bg-slate-100/40">
+                    <Image
+                      src={item.img}
+                      alt="Shipam"
+                      height={20}
+                      width={20}
+                      objectFit='cover'
+                    />
+                  </div>
+                  <div className="text-white font-light mt-2 text-xs">{item.title}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        {/* tenth section */}
+        <div className="w-10/12 mx-auto py-14">
+          <div className="font-semibold text-center">Subscribe on our newsletter</div>
+          <div className="text-center font-light text-slate-500 mt-3">Get daily news on upcoming offers from many suppliers all over the world</div>
+          <div className="w-fit rounded-full mx-auto max-w-2xl mt-10 flex items-center bg-white">
+            <SlEnvolope className="ml-3 text-slate-500" />
+            <input type="text" className='border-none py-2 px-2 bg-transparent outline-none' placeholder='Email' />
+            <button className="bg-red-700 text-red-100 rounded-full py-3.5 px-8 capitalize text-sm">sbscribe</button>
+          </div>
+        </div>
+        {/* eleventh section */}
+        <div className="bg-white py-10">
+          <div className="w-10/12 mx-auto">
+            <div className=""></div>
           </div>
         </div>
       </div>

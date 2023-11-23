@@ -286,3 +286,38 @@ export const ProductList5 = [
         position: `left`
     },
 ]
+
+export const CountryLists = [
+    {
+        img: `/images/c1.png`,
+        title: `Japan`
+    },
+    {
+        img: `/images/c2.png`,
+        title: `USA`
+    },
+    {
+        img: `/images/c3.png`,
+        title: `Italy`
+    },
+    {
+        img: `/images/c4.png`,
+        title: `Turkey`
+    },
+    {
+        img: `/images/c5.png`,
+        title: `Malaysia`
+    },
+    {
+        img: `/images/c7.png`,
+        title: `South Korea`
+    },
+    {
+        img: `/images/c8.png`,
+        title: `Vietnam`
+    },
+    {
+        img: `/images/c9.png`,
+        title: `Russia`
+    },
+]
