@@ -417,6 +417,7 @@ const page = () => {
             </div>
           </div>
         </div>
+        
         {/* tenth section */}
         <div className="w-10/12 mx-auto py-14">
           <div className="font-semibold text-center">Subscribe on our newsletter</div>
