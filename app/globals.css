@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+.banner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 75vh;
+}
+.bannerdiv {
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.730), rgba(0, 0, 0, 0.730), rgba(0, 0, 0, 0.500), transparent);
+}
