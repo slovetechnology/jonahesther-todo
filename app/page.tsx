@@ -117,11 +117,12 @@ import bgimg from '../public/images/header.jpg'
 import bgimg4 from '../public/images/imgs1.jpg'
 import bgimg2 from '../public/images/image92.png'
 import bgimg3 from '../public/images/imgs11.png'
+import bgimg5 from '../public/images/snake.svg'
 import { SlMagnifier } from 'react-icons/sl'
 import { FaPlay } from 'react-icons/fa'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ProductList1, ProductList2, ProductList3, ProductList4, Secondection, TopLists } from '@/components/general/Extras'
+import { ProductList1, ProductList2, ProductList3, ProductList4, ProductList5, Secondection, TopLists } from '@/components/general/Extras'
 
 const page = () => {
   return (
@@ -298,7 +299,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        
+
         {/* sixth section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 bg-[#f4f4f4] py-14">
           <div className=" w-10/12 ml-auto flex flex-col justify-center gap-7">
@@ -340,6 +341,28 @@ const page = () => {
         {/* seventh section */}
         <div className="w-10/12 mx-auto my-20">
           <div className="text-5xl text-center font-semibold">How to Use Shipam</div>
+          <div className=""
+            style={{ backgroundImage: `url(${bgimg5.src})` }}
+          >
+            {ProductList5.map((item, i) => (
+              <div key={i} className="grid grid-cols-1 lg:grid-cols-2">
+                <div className=""></div>
+                <div className="">
+                  <div className="relative w-[25rem] ml-auto h-[15rem]">
+                    <Image
+                      src={item.img}
+                      alt="Shipam"
+                      fill
+                      objectFit='cover'
+                      className='rounded-3xl brightness-90'
+                    />
+                    <div className="w-full h-full bg-yellow-500/20 absolute top-0 left-0 rounded-3xl"></div>
+                    <div className="w-10/12 mx-auto right-0 h-full bg-red-600/20 absolute top-0 left-0 rounded-3xl"></div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

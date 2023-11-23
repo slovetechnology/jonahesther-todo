@@ -248,3 +248,41 @@ export const ProductList4 = [
         title: `Community Feedback`
     },
 ]
+
+export const ProductList5 = [
+    {
+        icon: ``,
+        title: `Sign Up`,
+        text: `Start your Shipam journey by signing up for an account. You can choose to sign up as a Business (B2B), an Individual Seller or Service Provider (P2P), or a Consumer (B2C). Provide the necessary information to create your account.`,
+        img: `/images/imgs24.jpg`,
+        position: `top`
+    },
+    {
+        icon: ``,
+        title: `Profile Creation`,
+        text: `After registration, take the time to complete your user profile. This is your opportunity to introduce yourself and your business to the Shipam community.`,
+        img: `/images/imgs23.jpg`,
+        position: `left`
+    },
+    {
+        icon: ``,
+        title: `Explore Marketplace`,
+        text: `As a buyer, begin your journey by exploring the diverse offerings on Shipam. Use our user-friendly search and filter options to find products or services that suit your needs.`,
+        img: `/images/imgs26.jpg`,
+        position: `left`
+    },
+    {
+        icon: ``,
+        title: `Negotiate and Agree`,
+        text: `If you're a buyer or seller, take advantage of our platform to negotiate prices and terms directly. Reach mutually beneficial agreements and ensure transparent transactions.`,
+        img: `/images/imgs25.jpg`,
+        position: `right`
+    },
+    {
+        icon: ``,
+        title: `Make Purchase`,
+        text: `Buyers can add products to their shopping carts, when you're ready to make a purchase, proceed to your cart for a seamless checkout experience`,
+        img: `/images/imgs19.jpg`,
+        position: `left`
+    },
+]
