@@ -158,12 +158,77 @@ const page = () => {
           className='banner'
           style={{ backgroundImage: `url(${bgimg.src})` }}
         >
-          <div className="bannerdiv h-full flex items-center justify-center flex-col">
-            <h1 className='text-white font-semibold text-5xl text-center'>Welcome to Shipam: your Gatway <br /> to Versatile E-Comerce</h1>
-            <div className="bg-slate-100/40 p-6 mt-10 rounded-full w-11/12 max-w-[46rem]">
-              <div className="bg-white flex items-center justify-between p-1.5 rounded-full">
-                <input type="text" className='p-2 rounded-full outline-none border-none' placeholder='What are you looking for?' />
-                <button className="bg-red-600 text-red-100 text-xl rounded-full p-3"> <SlMagnifier /> </button>
+          <div className="bannerdiv w-full h-full">
+            <div className="">
+              <div className="">
+                <div className="flex items-center justify-between w-10/12 mx-auto py-2">
+                  <div className="">
+                    <Link href="/" className="">
+                      <Image
+                        src="/images/logo.svg"
+                        alt="Shipam"
+                        width={100}
+                        height={100}
+                      />
+                    </Link>
+                  </div>
+                  <div className="">
+                    <div className="flex items-center gap-6">
+                      <Link href="/auth/signin" className='text-sm text-white'>Sign In</Link>
+                      <Link href="/auth/signup" className='text-sm text-white bg-red-700 py-1.5 px-7 rounded-full'>Sign Up</Link>
+                      <button>
+                        <Image 
+                        src="/images/heart.svg"
+                        alt="Shipam"
+                        width={22}
+                        height={100}
+                        />
+                      </button>
+                      <button>
+                        <Image 
+                        src="/images/cart.svg"
+                        alt="Shipam"
+                        width={22}
+                        height={100}
+                        />
+                      </button>
+                      <button>
+                        <Image 
+                        src="/images/user.svg"
+                        alt="Shipam"
+                        width={22}
+                        height={100}
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="">
+                <div className="flex items-center justify-between w-10/12 mx-auto">
+                  <div className="flex flex-row items-center gap-5 text-sm text-white">
+                    <button className="flex items-center gap-1"> <Image src="/images/bars.svg" alt="Shipam" width={15} height={100} /> All categories</button>
+                    <button className="">Hot Offers</button>
+                    <button className="">Gift Boxes</button>
+                    <button className="">White Paper</button>
+                    <button className="">Menu Item</button>
+                  </div>
+                  <div className="flex flex-row items-center gap-5 text-sm text-white">
+                    <button className="">Sell on Shipam</button>
+                    <button className="">Become a Service Provider</button>
+                    <button className="">Help Center</button>
+                    <button className="">Get the app</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className=" h-full flex items-center justify-center flex-col">
+              <h1 className='text-white font-semibold text-5xl text-center'>Welcome to Shipam: your Gatway <br /> to Versatile E-Comerce</h1>
+              <div className="bg-slate-100/40 p-6 mt-10 rounded-full w-11/12 max-w-[46rem]">
+                <div className="bg-white flex items-center justify-between p-1.5 rounded-full">
+                  <input type="text" className='p-2 rounded-full outline-none border-none' placeholder='What are you looking for?' />
+                  <button className="bg-red-600 text-red-100 text-xl rounded-full p-3"> <SlMagnifier /> </button>
+                </div>
               </div>
             </div>
           </div>
