@@ -421,3 +421,68 @@ export const FooterLinks = [
         ]
     },
 ]
+
+export const OrderListings = [
+    {
+        tag: `Order ID: 8924 `,
+        status: `pending`,
+        createdAt: `Date: 16 December 2018`,
+        name: `Mike Johnatan`,
+        phone: `Phone: 371-295-9131`,
+        email: `Email: info@mywebsite.com`,
+        country: `United States`,
+        address1: `3601 Old Capitol Trail, Unit A-7, Suite`,
+        address2: `170777, Wilmington, DE 19808`,
+        pay_card: `Visa **** 4216`,
+        fee: `Shipping fee: $56`,
+        total: `Total paid: $456`,
+        subs: [
+            {
+                img: `/images/shirts.jpeg`,
+                title: `T-shirts with multiple colors`,
+                size: `Size: XXL`,
+                pricing: `2x = $339.90`
+            },
+            {
+                img: `/images/imgs14.png`,
+                title: `Gaming Headset 32db,`,
+                size: `Size: XXL`,
+                pricing: `2x = $339.90`
+            },
+            {
+                img: `/images/image33.png`,
+                title: `Apple iPhone 12`,
+                size: `Size: XXL`,
+                pricing: `2x = $339.90`
+            },
+        ]
+    },
+    {
+        tag: `Order ID: 8924 `,
+        status: `shipped`,
+        createdAt: `Date: 16 December 2018`,
+        name: `Mike Johnatan`,
+        phone: `Phone: 371-295-9131`,
+        email: `Email: info@mywebsite.com`,
+        country: `United States`,
+        address1: `3601 Old Capitol Trail, Unit A-7, Suite`,
+        address2: `170777, Wilmington, DE 19808`,
+        pay_card: `Visa **** 4216`,
+        fee: `Shipping fee: $56`,
+        total: `Total paid: $456`,
+        subs: [
+            {
+                img: `/images/imgs20.png`,
+                title: `T-shirts with multiple colors`,
+                size: `Size: XXL`,
+                pricing: `2x = $339.90`
+            },
+            {
+                img: `/images/chair.jpeg`,
+                title: `Gaming Headset 32db,`,
+                size: `Size: XXL`,
+                pricing: `2x = $339.90`
+            },
+        ]
+    },
+]
