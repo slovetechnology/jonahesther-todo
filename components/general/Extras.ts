@@ -289,35 +289,135 @@ export const ProductList5 = [
 
 export const CountryLists = [
     {
-        img: `/images/c1.png`,
+        img: `/images/c9.png`,
         title: `Japan`
     },
     {
-        img: `/images/c2.png`,
+        img: `/images/c8.png`,
         title: `USA`
     },
     {
-        img: `/images/c3.png`,
+        img: `/images/c5.png`,
         title: `Italy`
     },
     {
-        img: `/images/c4.png`,
+        img: `/images/c7.png`,
         title: `Turkey`
     },
     {
-        img: `/images/c5.png`,
+        img: `/images/c4.png`,
         title: `Malaysia`
     },
     {
-        img: `/images/c7.png`,
+        img: `/images/c3.png`,
         title: `South Korea`
     },
     {
-        img: `/images/c8.png`,
+        img: `/images/c2.png`,
         title: `Vietnam`
     },
     {
-        img: `/images/c9.png`,
+        img: `/images/c1.png`,
         title: `Russia`
+    },
+]
+
+export const Socials = [
+    "/images/facebook3.svg",
+    "/images/youtube3.svg",
+    "/images/twitter3.svg",
+    "/images/linkedin3.svg",
+    "/images/instagram3.svg",
+]
+
+export const AppIcons = [
+    "/images/playstore.svg",
+    "/images/appstore.svg",
+]
+
+export const FooterLinks = [
+    {
+        title: `About`,
+        subs: [
+            {
+                title: `About Us`,
+                url: ``
+            },
+            {
+                title: `Find store`,
+                url: ``
+            },
+            {
+                title: `Categories`,
+                url: ``
+            },
+            {
+                title: `Blogs`,
+                url: ``
+            },
+        ]
+    },
+    {
+        title: `Partnership`,
+        subs: [
+            {
+                title: `About Us`,
+                url: ``
+            },
+            {
+                title: `Find store`,
+                url: ``
+            },
+            {
+                title: `Categories`,
+                url: ``
+            },
+            {
+                title: `Blogs`,
+                url: ``
+            },
+        ]
+    },
+    {
+        title: `Information`,
+        subs: [
+            {
+                title: `Help Center`,
+                url: ``
+            },
+            {
+                title: `Money Refund`,
+                url: ``
+            },
+            {
+                title: `Shipping`,
+                url: ``
+            },
+            {
+                title: `Contact Us`,
+                url: ``
+            },
+        ]
+    },
+    {
+        title: `For Users`,
+        subs: [
+            {
+                title: `Login`,
+                url: ``
+            },
+            {
+                title: `Register`,
+                url: ``
+            },
+            {
+                title: `Settings`,
+                url: ``
+            },
+            {
+                title: `My Orders`,
+                url: ``
+            },
+        ]
     },
 ]

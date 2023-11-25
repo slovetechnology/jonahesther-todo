@@ -119,11 +119,12 @@ import bgimg7 from '../public/images/imgs27.jpeg'
 import bgimg2 from '../public/images/image92.png'
 import bgimg3 from '../public/images/imgs11.png'
 import bgimg5 from '../public/images/snake.svg'
-import { SlEnvolope, SlMagnifier } from 'react-icons/sl'
+import frame1 from '../public/images/frame1.svg'
+import { SlArrowUp, SlEnvolope, SlMagnifier } from 'react-icons/sl'
 import { FaPlay } from 'react-icons/fa'
 import Link from 'next/link'
 import Image from 'next/image'
-import { CountryLists, ProductList1, ProductList2, ProductList3, ProductList4, ProductList5, Secondection, TopLists } from '@/components/general/Extras'
+import { AppIcons, CountryLists, FooterLinks, ProductList1, ProductList2, ProductList3, ProductList4, ProductList5, Secondection, Socials, TopLists } from '@/components/general/Extras'
 
 const page = () => {
   return (
@@ -417,12 +418,12 @@ const page = () => {
             </div>
           </div>
         </div>
-        
+
         {/* tenth section */}
         <div className="w-10/12 mx-auto py-14">
           <div className="font-semibold text-center">Subscribe on our newsletter</div>
           <div className="text-center font-light text-slate-500 mt-3">Get daily news on upcoming offers from many suppliers all over the world</div>
-          <div className="w-fit rounded-full mx-auto max-w-2xl mt-10 flex items-center bg-white">
+          <div className="w-fit rounded-full mx-auto max-w-[53rem] mt-10 flex items-center bg-white">
             <SlEnvolope className="ml-3 text-slate-500" />
             <input type="text" className='border-none py-2 px-2 bg-transparent outline-none' placeholder='Email' />
             <button className="bg-red-700 text-red-100 rounded-full py-3.5 px-8 capitalize text-sm">sbscribe</button>
@@ -431,7 +432,80 @@ const page = () => {
         {/* eleventh section */}
         <div className="bg-white py-10">
           <div className="w-10/12 mx-auto">
-            <div className=""></div>
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-5">
+              <div className="col-span-1">
+                <Image
+                  src={frame1}
+                  alt="Shipam"
+                  width={150}
+                  height={100}
+                />
+                <div className="text-slate-500 text-sm my-7">Best information about the company goes here but now lorem ipsum is</div>
+                <div className="flex items-center flex-row gap-2">
+                  {Socials.map((item, i) => (
+                    <Link key={i} href="/">
+                      <Image
+                        src={item}
+                        alt="Shipam"
+                        width={30}
+                        height={100}
+                      />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              <div className="col-span-3">
+                <div className="grid grid-cols-1 lg:grid-cols-4">
+                  {FooterLinks.map((item, i) => (
+                    <div className="" key={i}>
+                      <div className="font-semibold text-sm mb-3">{item.title}</div>
+                      <div className="flex flex-col">
+                        {item.subs.map((link, index) => (
+                          <Link href="/" key={index} className='text-xs text-slate-500 py-2'>{link.title}</Link>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="col-span-1">
+                <div className="mb-5">Get app</div>
+                <div className="flex flex-col gap-2">
+                  {AppIcons.map((item, i) => (
+                    <Link href="/" key={i}>
+                      <Image
+                        src={item}
+                        alt="Shipam"
+                        width={100}
+                        height={100}
+                      />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* twelve section */}
+        <div className="py-8">
+          <div className="w-10/12 mx-auto text-slate-500 text-sm">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
+              <div className="">
+                <div className="">© 2023 Shipam. </div>
+              </div>
+              <div className="w-fit ml-auto">
+                <div className="flex items-center gap-2">
+                  <Image 
+                  src="/images/c8.png"
+                  alt="Shipam"
+                  width={20}
+                  height={100}
+                  />
+                  <div className="">English</div>
+                  <SlArrowUp />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
