@@ -126,7 +126,30 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { AppIcons, CountryLists, FooterLinks, ProductList1, ProductList2, ProductList3, ProductList4, ProductList5, Secondection, Socials, TopLists } from '@/components/general/Extras'
 
+
 const page = () => {
+  const FixStyle = (id: number) => {
+    if (id === 1) return `mt-20`
+    if (id === 2) return `-mt-14`
+    if (id === 3) return `mt-14`
+    if (id === 4) return `mt-28`
+    if (id === 5) return `mt-20`
+  }
+  const FixIcon = (id: number) => {
+    if (id === 1) return `w-fit h-fit absolute -top-5 -left-3 bg-red-700 p-3 rounded-full`
+    if (id === 2) return `w-fit h-fit bg-red-700 p-3 absolute top-32 left-0 rounded-full`
+    if (id === 3) return `w-fit h-fit bg-red-700 p-3 absolute top-32 left-0 rounded-full`
+    if (id === 4) return `w-fit h-fit bg-red-700 p-3 absolute top-32 right-0 rounded-full`
+    if (id === 5) return `w-fit h-fit bg-red-700 p-3 absolute top-10 left-0 rounded-full`
+  }
+
+  const FixTextPlacing = (id: number) => {
+    if (id === 1) return `-mt-16`
+    if (id === 2) return `ml-14`
+    if (id === 3) return `ml-14`
+    if (id === 4) return `text-right mr-14`
+    if (id === 5) return `-mt-10`
+  }
   return (
     <div>
       <div className="">
@@ -341,33 +364,27 @@ const page = () => {
           </div>
         </div>
         {/* seventh section */}
-        <div className="w-10/12 mx-auto my-20">
-          <div className="text-5xl text-center font-semibold">How to Use Shipam</div>
-          <div className="bg-contain bg-no-repeat bg-center"
-            style={{ backgroundImage: `url(${bgimg5.src})` }}
-          >
-            <div className="grid grid-cols-1 lg:grid-cols-2">
-              <div className=""></div>
-              <div className="">
-                <div className={`relative w-[33rem] h-[20rem]`}>
-                  <Image
-                    src={bgimg}
-                    alt="Shipam"
-                    fill
-                    objectFit='cover'
-                    className='rounded-3xl brightness-90'
-                  />
-                  <div className="absolute top-0 left-0 w-full h-full rounded-3xl bg-red-400 border-[12px]"></div>
-                  {/* <div className="w-full h-full bg-white/20 absolute top-0 left-0 rounded-3xl"></div>
-                    <div className="w-11/12 mx-auto right-0 h-5/6 my-auto bottom-0 bg-black/30 absolute top-0 left-0 rounded-3xl"></div> */}
-                </div>
-              </div>
-            </div>
-            {/* {ProductList5.map((item, i) => (
-              <div key={i} className="grid grid-cols-1 lg:grid-cols-2 mt-10 pb-14 pt-5">
-                <div className={`${(i + 1) % 2 === 0 ? 'order-2' : 'order-1'} flex flex-col justify-center w-4/5 mx-auto`}>
-                  <div className="text-red-700 font-semibold text-3xl">{item.title}</div>
-                  <div className="text-base">{item.text}</div>
+        <div className="my-20 relative">
+          <div className="text-5xl w-10/12 mx-auto text-center font-semibold">How to Use Shipam</div>
+          <div className="w-10/12 mx-auto relative">
+            <div className="bg-contain bg-no-repeat absolute top-0 left-0 h-[150rem] w-full mx-auto right-0"
+              style={{ backgroundImage: `url(${bgimg5.src})` }}
+            ></div>
+            {ProductList5.map((item, i) => (
+              <div key={i} className={`grid grid-cols-1 lg:grid-cols-2 pb-20 ${FixStyle(i + 1)}`}>
+                <div className={`${(i + 1) % 2 === 0 ? 'order-2' : 'order-1'} flex flex-col justify-center w-4/5 mx-auto relative`}>
+                  <div className={`${FixIcon(i + 1)}`}>
+                    <Image
+                      src={item.icon}
+                      alt="Shipam"
+                      width={25}
+                      height={100}
+                    />
+                  </div>
+                  <div className={` ${FixTextPlacing(i + 1)}`}>
+                    <div className={`text-red-700 font-semibold text-3xl mb-5`}>{item.title}</div>
+                    <div className="text-base">{item.text}</div>
+                  </div>
                 </div>
                 <div className={`${(i + 1) % 2 !== 0 ? 'order-2' : 'order-1'} py-10`}>
                   <div className={`relative w-[33rem] ${(i + 1) % 2 !== 0 ? 'ml-auto' : 'mr-auto'} h-[20rem]`}>
@@ -383,8 +400,9 @@ const page = () => {
                   </div>
                 </div>
               </div>
-            ))} */}
+            ))}
           </div>
+
         </div>
         {/* eight section */}
         <div className="w-10/12 mx-auto h-[40rem] mb-20 bg-cover bg-center rounded-[2rem]"
@@ -495,11 +513,11 @@ const page = () => {
               </div>
               <div className="w-fit ml-auto">
                 <div className="flex items-center gap-2">
-                  <Image 
-                  src="/images/c8.png"
-                  alt="Shipam"
-                  width={20}
-                  height={100}
+                  <Image
+                    src="/images/c8.png"
+                    alt="Shipam"
+                    width={20}
+                    height={100}
                   />
                   <div className="">English</div>
                   <SlArrowUp />
