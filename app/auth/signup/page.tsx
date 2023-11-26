@@ -6,7 +6,7 @@ const page = () => {
     return (
         <div>
             <div className="">
-                <div className="w-10/12 mx-auto h-[90vh] py-10">
+                <div className="w-10/12 mx-auto py-10">
                     <div className="bg-white p-4 rounded-xl shadow-xl w-full max-w-lg mx-auto">
                         <div className="font-semibold text-xl mb-7">Sign Up</div>
                         <form>
@@ -24,7 +24,7 @@ const page = () => {
                                 <div className="text-sm">Email</div>
                                 <input type="text" className='w-full rounded-lg  bg-input p-2' />
                             </div>
-                                <div className="text-sm">Phone</div>
+                            <div className="text-sm">Phone</div>
                             <div className="mb-5 grid grid-cols-7 gap-4">
                                 <div className="col-span-2">
                                     <input type="text" className='w-full rounded-lg  bg-input p-2' />
@@ -32,6 +32,44 @@ const page = () => {
                                 <div className="col-span-5">
                                     <input type="text" className='w-full rounded-lg  bg-input p-2' />
                                 </div>
+                            </div>
+                            <div className="mb-5 grid grid-cols-2 gap-3">
+                                <div className="">
+                                    <div className="text-sm">Account Number</div>
+                                    <input type="text" className='w-full rounded-lg  bg-input p-2' />
+                                </div>
+                                <div className="">
+                                    <div className="text-sm">Bank</div>
+                                    <input type="text" className='w-full rounded-lg  bg-input p-2' />
+                                </div>
+                            </div>
+                            <div className="mb-5">
+                                <div className="text-sm">Account Name</div>
+                                <input type="text" className='w-full rounded-lg  bg-input p-2' />
+                            </div>
+                            <div className="mb-5 grid grid-cols-2 gap-3">
+                                <div className="">
+                                    <div className="text-sm">Bank Swift code</div>
+                                    <input type="text" className='w-full rounded-lg  bg-input p-2' />
+                                </div>
+                                <div className="">
+                                    <div className="text-sm">Bank Iban</div>
+                                    <input type="text" className='w-full rounded-lg  bg-input p-2' />
+                                </div>
+                            </div>
+                            <div className="mb-5 grid grid-cols-2 gap-3">
+                                <div className="">
+                                    <div className="text-sm">NIN Number</div>
+                                    <input type="text" className='w-full rounded-lg  bg-input p-2' />
+                                </div>
+                                <div className="">
+                                    <div className="text-sm">BVN</div>
+                                    <input type="text" className='w-full rounded-lg  bg-input p-2' />
+                                </div>
+                            </div>
+                            <div className="mb-5">
+                                <div className="text-sm">Tax ID</div>
+                                <input type="text" className='w-full rounded-lg  bg-input p-2' />
                             </div>
                             <div className="mb-5">
                                 <div className="text-sm">Create Password</div>
