@@ -486,3 +486,27 @@ export const OrderListings = [
         ]
     },
 ]
+
+export const CartListOne = [
+    {
+        img: `/images/imgs28.jpeg`,
+        title: `Samsung Galaxy S23 Ultra`,
+        size: `Size: medium, Color: blue,  Material: Plastic`,
+        seller: `Seller: Artel Market`,
+        pricing: `$78.99`
+    },
+    {
+        img: `/images/image94.png`,
+        title: `T-shirts with multiple colors, for men and lady`,
+        size: `Size: medium, Color: blue,  Material: Plastic`,
+        seller: `Seller: Artel Market`,
+        pricing: `$78.99`
+    },
+    {
+        img: `/images/imgs3.png`,
+        title: `T-shirts with multiple colors, for men and lady`,
+        size: `Size: medium, Color: blue,  Material: Plastic`,
+        seller: `Seller: Artel Market`,
+        pricing: `$78.99`
+    },
+]
