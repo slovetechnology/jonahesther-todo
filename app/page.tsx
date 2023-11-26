@@ -110,7 +110,7 @@ const page = () => {
               </div>
             </div>
             <div className=" h-full flex items-center justify-center flex-col">
-              <h1 className='text-white font-semibold text-5xl text-center'>Welcome to Shipam: your Gateway <br /> to Versatile E-Comerce</h1>
+              <h1 className='text-white font-semibold text-5xl text-center'>Welcome to Shipam: your Gateway <br /> to Versatile E-Commerce</h1>
               <div className="bg-slate-100/40 p-6 mt-10 rounded-full w-11/12 max-w-[46rem]">
                 <div className="bg-white flex items-center justify-between p-1.5 rounded-full">
                   <input type="text" className='p-2 rounded-full outline-none border-none' placeholder='What are you looking for?' />
