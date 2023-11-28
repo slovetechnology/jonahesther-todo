@@ -7,6 +7,8 @@ import bgimg2 from '../public/images/image92.png'
 import bgimg3 from '../public/images/imgs11.png'
 import bgimg5 from '../public/images/snake.svg'
 import FooterOne from '@/components/general/FooterOne'
+import NewsLetters from '@/components/general/NewsLetters'
+import SubMenu from '@/components/general/SubMenu'
 import { SlArrowUp, SlEnvolope, SlMagnifier } from 'react-icons/sl'
 import { FaPlay } from 'react-icons/fa'
 import Link from 'next/link'
@@ -47,8 +49,8 @@ const page = () => {
         >
           <div className="bannerdiv w-full h-full">
             <div className="">
-              <div className="">
-                <div className="flex items-center justify-between w-10/12 mx-auto py-2">
+              <div className="w-10/12 mx-auto ">
+                <div className="flex items-center justify-between py-2">
                   <div className="">
                     <Link href="/" className="">
                       <Image
@@ -64,49 +66,33 @@ const page = () => {
                       <Link href="/auth/signin" className='text-sm text-white'>Sign In</Link>
                       <Link href="/auth/signup" className='text-sm text-white bg-red-700 py-1.5 px-7 rounded-full'>Sign Up</Link>
                       <button>
-                        <Image 
-                        src="/images/heart.svg"
-                        alt="Shipam"
-                        width={22}
-                        height={100}
+                        <Image
+                          src="/images/heart.svg"
+                          alt="Shipam"
+                          width={22}
+                          height={100}
                         />
                       </button>
                       <button>
-                        <Image 
-                        src="/images/cart.svg"
-                        alt="Shipam"
-                        width={22}
-                        height={100}
+                        <Image
+                          src="/images/cart.svg"
+                          alt="Shipam"
+                          width={22}
+                          height={100}
                         />
                       </button>
                       <button>
-                        <Image 
-                        src="/images/user.svg"
-                        alt="Shipam"
-                        width={22}
-                        height={100}
+                        <Image
+                          src="/images/user.svg"
+                          alt="Shipam"
+                          width={22}
+                          height={100}
                         />
                       </button>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="">
-                <div className="flex items-center justify-between w-10/12 mx-auto">
-                  <div className="flex flex-row items-center gap-5 text-sm text-white">
-                    <button className="flex items-center gap-1"> <Image src="/images/bars.svg" alt="Shipam" width={15} height={100} /> All categories</button>
-                    <button className="">Hot Offers</button>
-                    <button className="">Gift Boxes</button>
-                    <button className="">White Paper</button>
-                    <button className="">Menu Item</button>
-                  </div>
-                  <div className="flex flex-row items-center gap-5 text-sm text-white">
-                    <button className="">Sell on Shipam</button>
-                    <button className="">Become a Service Provider</button>
-                    <button className="">Help Center</button>
-                    <button className="">Get the app</button>
-                  </div>
-                </div>
+                <SubMenu color="text-white" />
               </div>
             </div>
             <div className=" h-full flex items-center justify-center flex-col">
@@ -390,15 +376,7 @@ const page = () => {
         </div>
 
         {/* tenth section */}
-        <div className="w-10/12 mx-auto py-14">
-          <div className="font-semibold text-center">Subscribe on our newsletter</div>
-          <div className="text-center font-light text-slate-500 mt-3">Get daily news on upcoming offers from many suppliers all over the world</div>
-          <div className="w-fit rounded-full mx-auto max-w-[53rem] mt-10 flex items-center bg-white">
-            <SlEnvolope className="ml-3 text-slate-500" />
-            <input type="text" className='border-none py-2 px-2 bg-transparent outline-none' placeholder='Email' />
-            <button className="bg-red-700 text-red-100 rounded-full py-3.5 px-8 capitalize text-sm">sbscribe</button>
-          </div>
-        </div>
+        <NewsLetters />
         {/* eleventh section */}
         <FooterOne />
         {/* twelve section */}

@@ -289,6 +289,68 @@ export const ProductList5 = [
     },
 ]
 
+export const ProductList6 = [
+    {
+        title: `GoPro HERO6 4K Action Camera - Black`,
+        currentpricing: `$998.00`,
+        oldpricing: `$1128.00`,
+        rating: 7.5,
+        text: `Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit `,
+        tag: `Free shipping`,
+        order: `154 orders`,
+        img: `/images/imgs28.jpeg`
+    },
+    {
+        title: `GoPro HERO6 4K Action Camera - Black`,
+        currentpricing: `$998.00`,
+        oldpricing: null,
+        rating: 7.5,
+        text: `Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit `,
+        tag: `Free shipping`,
+        order: `154 orders`,
+        img: `/images/imgs30.png`
+    },
+    {
+        title: `GoPro HERO6 4K Action Camera - Black`,
+        currentpricing: `$998.00`,
+        oldpricing: null,
+        rating: 7.5,
+        text: `Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit `,
+        tag: `Free shipping`,
+        order: `154 orders`,
+        img: `/images/image32.png`
+    },
+    {
+        title: `GoPro HERO6 4K Action Camera - Black`,
+        currentpricing: `$998.00`,
+        rating: 7.5,
+        text: `Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit `,
+        tag: `Free shipping`,
+        order: `154 orders`,
+        img: `/images/imgs16.png`
+    },
+    {
+        title: `GoPro HERO6 4K Action Camera - Black`,
+        currentpricing: `$998.00`,        
+        oldpricing: `$1128.00`,
+        rating: 7.5,
+        text: `Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit `,
+        tag: `Free shipping`,
+        order: `154 orders`,
+        img: `/images/imgs15.png`
+    },
+    {
+        title: `GoPro HERO6 4K Action Camera - Black`,
+        currentpricing: `$998.00`,
+        oldpricing: null,
+        rating: 7.5,
+        text: `Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit `,
+        tag: `Free shipping`,
+        order: `154 orders`,
+        img: `/images/imgs14.png`
+    },
+]
+
 export const CountryLists = [
     {
         img: `/images/c9.png`,
