@@ -18,3 +18,14 @@
 .bannerdiv {
   background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.730), rgba(0, 0, 0, 0.730), rgba(0, 0, 0, 0.500), transparent);
 }
+.cartafter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 3rem;
+  z-index: 1;
+  /* border-color: #820A0A #820A0A transparent transparent; */
+  border-color: transparent transparent #B90404 #B90404;
+  border-style: solid;
+}

@@ -1,3 +1,5 @@
+import { FaCommentAlt, FaLock, FaTruck } from "react-icons/fa"
+import {MdComment} from 'react-icons/md'
 
 export const TopLists = [
     {
@@ -509,4 +511,53 @@ export const CartListOne = [
         seller: `Seller: Artel Market`,
         pricing: `$78.99`
     },
+]
+
+export const CartListTwo = [
+    {
+        title: `Secure payment`,
+        text: `Have you ever finally just `,
+        icon: FaLock,
+    },
+    {
+        title: `Customer Support`,
+        text: `Have you ever finally just `,
+        icon: MdComment,
+    },
+    {
+        title: `Free delivery`,
+        text: `Have you ever finally just`,
+        icon: FaTruck,
+    },
+]
+
+export const cartListThree = [
+    {
+        img: `/images/image32.png`,
+        pricing: `$99.50`,
+        text: `GoPro HERO6 4K Action Camera - Black`,
+    },
+    {
+        img: `/images/imgs29.png`,
+        pricing: `$99.50`,
+        text: `GoPro HERO6 4K Action Camera - Black`,
+    },
+    {
+        img: `/images/imgs15.png`,
+        pricing: `$99.50`,
+        text: `GoPro HERO6 4K Action Camera - Black`,
+    },
+    {
+        img: `/images/imgs16.png`,
+        pricing: `$99.50`,
+        text: `GoPro HERO6 4K Action Camera - Black`,
+    },
+]
+
+export const CartCardsList = [
+    "/images/ali.svg",
+    "/images/mastercard.svg",
+    "/images/paypal.svg",
+    "/images/visa.svg",
+    "/images/opay.png",
 ]
