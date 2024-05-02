@@ -4,7 +4,8 @@ import TodoForm from "./TodoForm";
 
 // grid, flex
 export default function TodoScreen() {
-    const [todos, setTodos] = useState([])
+    const localData = JSON.parse(localStorage.getItem('todos'))
+    const [todos, setTodos] = useState(localData || [])
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto gap-10 my-10">
             <div className="h-fit pb-16 bg-white shadow-xl rounded-lg">

@@ -1,10 +1,18 @@
 
 // code splitting
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Input from "./Input";
 
 export default function TodoForm(props) {
+    const localData = JSON.parse(localStorage.getItem('todos')) //[{}, {}, {}, {}, {}, {}, {}, {}, {},]
+    // useEffect 
+
+    useEffect(() => {
+        if(!localData) {
+            localStorage.setItem('todos', JSON.stringify([]))
+        }
+    }, [])
     const [errors, setErrors] = useState({
         title: '',
         price: '',
@@ -35,6 +43,10 @@ export default function TodoForm(props) {
             dataToStore,
             ...props.todos,
         ])
+        
+        
+        localData.unshift(dataToStore)
+        localStorage.setItem('todos', JSON.stringify(localData))
     }
     return (
         <div className="w-11/12 mx-auto mt-10">
