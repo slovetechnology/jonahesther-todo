@@ -18,8 +18,12 @@ function AllTodos(props) {
                         </div>
                     </div>
                     <div className="col-span-2 flex items-center justify-end gap-10">
-                        <button className="text-blue-600 border rounded-full p-2"> <FaRegEdit /> </button>
-                        <button className="text-red-600 border rounded-full p-2"> <FaTrashAlt /> </button>
+                        <button 
+                        onClick={() => props.GetTodoData(item)}
+                        className="text-blue-600 border rounded-full p-2"> <FaRegEdit /> </button>
+                        <button 
+                        onClick={() => props.DeleteTodoData(item)}
+                        className="text-red-600 border rounded-full p-2"> <FaTrashAlt /> </button>
                     </div>
                 </div>
             </div>
